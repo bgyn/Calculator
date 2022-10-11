@@ -112,6 +112,18 @@ window.addEventListener('keydown',(e)=>{
     {
         clickEnter(e.key);
     }
+    else if(
+        e.key==='Delete'
+    )
+    {
+        clickDelete(e.key);
+    }
+    else if(
+        e.key==='Backspace'
+    )
+    {
+        clickBackspace(e.key);
+    }
 })
 function clickButtonEl(key){
     numbersEl.forEach(button=>{
@@ -129,4 +141,12 @@ function clickOperation(key){
 function clickEnter()
 {
     equalEl.click();
+}
+function clickDelete()
+{
+    clearEl.click();
+}
+function clickBackspace()
+{
+    clearLastEl.click();
 }
